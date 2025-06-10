@@ -309,7 +309,7 @@ export default function LandingPage() {
                     {/* Imagem principal */}
                     <div className="relative overflow-hidden rounded-xl border border-white/20 backdrop-blur-sm bg-white/5">
                       <Image
-                        src="/logo.png?height=550&width=550"
+                        src="/images/devduo.jpeg?height=550&width=550"
                         width={550}
                         height={550}
                         alt="Landing Page Preview"
@@ -639,7 +639,7 @@ export default function LandingPage() {
                     },
                     {
                       name: "TailwindCSS",
-                      icon: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ATailwind_CSS_Logo.svg&psig=AOvVaw1AGeQqZZi4QGOUl7HCmuEV&ust=1749656847925000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCJDmiOuZ540DFQAAAAAdAAAAABAE",
+                      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
                       color: "bg-cyan-400",
                     },
                   ].map((tech, index) => (

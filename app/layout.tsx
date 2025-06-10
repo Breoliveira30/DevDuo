@@ -1,0 +1,27 @@
+import type React from "react"
+import type { Metadata } from "next"
+import "./globals.css"
+import { ProjectProvider } from "@/lib/project-context"
+import { AuthProvider } from "@/components/admin/auth-context"
+
+export const metadata: Metadata = {
+  title: "DevDuo",
+  description: "Transforme sua presença digital com Landing Pages extraordinárias",
+  generator: "v0.dev",
+}
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode
+}>) {
+  return (
+    <html lang="pt-BR">
+      <body>
+        <AuthProvider>
+          <ProjectProvider>{children}</ProjectProvider>
+        </AuthProvider>
+      </body>
+    </html>
+  )
+}
